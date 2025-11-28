@@ -1,0 +1,26 @@
+# Knight move on keypad - Python Dependencies
+
+# PURE PYTHON IMPLEMENTATION - NO EXTERNAL DEPENDENCIES REQUIRED
+# This project uses only Python standard library components
+
+# Optional Dependencies for Enhanced Development Experience
+# Uncomment only if needed for specific features:
+
+# Jupyter Notebook Support (for interactive analysis)
+# jupyter>=1.0.0        # Interactive notebook support only
+
+# Development Tools (Optional)
+# pytest>=7.0.0         # Testing framework
+# mypy>=1.0.0           # Static type checking
+# black>=22.0.0         # Code formatting
+# isort>=5.10.0         # Import sorting
+
+# Type Checking (Runtime - Optional for older Python versions)
+# typing-extensions>=4.0.0    # Enhanced typing support for Python < 3.9
+
+# NOTE: 
+# - Main functionality requires ONLY Python 3.9+ standard library
+# - Uses built-in modules: typing, time, datetime, sys, os
+# - pandas and numpy have been eliminated from this implementation
+# - Install jupyter only if you want to run the interactive notebook
+# - All timing and performance analysis uses standard library components
