@@ -5,20 +5,20 @@ This project analyzes knight moves on a 4x5 grid keypad using pure Python.
 
 QUICK START
 -----------
-To get the total number of valid paths for step 9 (sequence of 10):
+To get the total number of valid sequences for step 9 (sequence of 10):
     python run.py
 
-This will output a single number representing the total valid paths.
+This will output a single number representing the total valid sequences.
 
 CODE STRUCTURE
 --------------
 src/
-├── table_data.py      - Creates the 4x5 grid coordinate data
+├── keypad_data.py     - Creates the 4x5 grid coordinate data
 ├── positions.py       - Analyzes grid positions (vowels, missing, bounds)
 ├── knight_move.py     - Implements knight movement logic
-├── path_create.py     - Generates multi-step knight move paths
-├── path_check.py      - Validates paths against constraints
-├── vowel_check.py     - Checks vowel limits in path strings
+├── sequence_create.py     - Generates multi-step knight move sequences
+├── sequence_check.py      - Validates sequences against constraints
+├── vowel_check.py     - Checks vowel limits in sequence strings
 
 Main Files:
 ├── run.py            - Simple script to run step 9 analysis (USE THIS!)
@@ -37,14 +37,14 @@ F G H I J
 K L M N O
 1 2 3 * *
 
-Where * represents missing positions that paths must avoid.
+Where * represents missing positions that sequences must avoid.
 
 CONSTRAINTS
 -----------
 - Knight moves only (L-shaped: 2+1 or 1+2 squares)
 - Stay within grid boundaries
 - Avoid missing positions (4,1) and (4,5)
-- Maximum 2 vowel hits per path (A, E, I, O, U)
+- Maximum 2 vowel hits per sequence (A, E, I, O, U)
 
 DEPENDENCIES
 ------------
