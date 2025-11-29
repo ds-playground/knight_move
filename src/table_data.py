@@ -48,7 +48,7 @@ def get_table_data() -> List[Tuple[int, int, str]]:
     
     Use Cases:
     ----------
-    - Knight move path analysis on letter/number grids
+    - Knight move sequence analysis on letter/number grids
     - Position-based data processing without pandas dependency
     - Lightweight grid representation for algorithmic analysis
     """
