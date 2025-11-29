@@ -12,7 +12,7 @@ The analysis includes:
 """
 
 # Import required modules for data creation and sequence analysis
-from src.table_data import get_table_data
+from src.keypad_data import get_keypad_data
 from src.positions import get_vowel_positions, get_missing_positions, get_coordinate_bounds
 from src.sequence_check import check_inside_bounds, check_in_avoided_coordinate
 from src.sequence_create import get_all_sequences
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     
     # Create the main coordinate data containing the letter/number grid
     # This creates coordinate tuples in format (row, col, value) for a 4x5 grid
-    coordinate_data = get_table_data()
+    coordinate_data = get_keypad_data()
     print("Keypad (Coordinate Data):")
     print("First few coordinates:")
     for i, coord in enumerate(coordinate_data[:10]):

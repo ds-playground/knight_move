@@ -13,7 +13,7 @@ This will output a single number representing the total valid sequences.
 CODE STRUCTURE
 --------------
 src/
-├── table_data.py      - Creates the 4x5 grid coordinate data
+├── keypad_data.py     - Creates the 4x5 grid coordinate data
 ├── positions.py       - Analyzes grid positions (vowels, missing, bounds)
 ├── knight_move.py     - Implements knight movement logic
 ├── sequence_create.py     - Generates multi-step knight move sequences

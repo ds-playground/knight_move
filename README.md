@@ -35,7 +35,7 @@ knight-move-analysis/
     ├── sequence_check.py          # Sequence validation and constraint checking
     ├── sequence_create.py         # Sequence generation and filtering systems
     ├── positions.py           # Coordinate analysis and position utilities
-    ├── table_data.py          # Grid data creation and coordinate management
+    ├── keypad_data.py         # Grid data creation and coordinate management
     ├── vowel_check.py         # Basic vowel counting and validation
     └── vowel_check_additional.py # Extended vowel analysis functions
 ```
@@ -122,12 +122,12 @@ sequences = get_all_sequences(
 ```
 
 #### Coordinate-Based Analysis
-```python
-from src.table_data import get_table_data
-from src.positions import get_vowel_positions, get_missing_positions, get_coordinate_bounds
-
+#```python
+#from src.keypad_data import get_keypad_data
+#from src.positions import get_vowel_positions, get_missing_positions, get_coordinate_bounds
+#
 # Create and analyze the coordinate grid
-coordinate_data = get_table_data()  # Returns List[Tuple[int, int, str]]
+#coordinate_data = get_keypad_data()  # Returns List[Tuple[int, int, str]]
 vowel_positions = get_vowel_positions(coordinate_data)
 missing_positions = get_missing_positions(coordinate_data)
 bounds = get_coordinate_bounds(coordinate_data)
@@ -159,7 +159,7 @@ print(f"Coordinate bounds: {bounds}")
 ## Configuration Options
 
 ### Grid Customization
-Modify `src/table_data.py` to change:
+Modify `src/keypad_data.py` to change:
 - Grid dimensions (currently 4x5)
 - Cell contents (letters, numbers, symbols)
 - Coordinate ranges and values

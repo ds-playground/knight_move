@@ -4,14 +4,14 @@ Simple runner script for knight move analysis with step_i = 9 (sequence length o
 Prints total number of sequences in a single line.
 """
 
-from src.table_data import get_table_data
+from src.keypad_data import get_keypad_data
 from src.positions import get_vowel_positions, get_missing_positions, get_coordinate_bounds
 from src.sequence_check import check_inside_bounds, check_in_avoided_coordinate
 from src.sequence_create import get_all_sequences
 
 def main():
     # Get coordinate data and analysis parameters
-    coordinate_data = get_table_data()    
+    coordinate_data = get_keypad_data()    
     miss_pos = get_missing_positions(coordinate_data)
     vo_pos = get_vowel_positions(coordinate_data)
     bounds_dict = get_coordinate_bounds(coordinate_data)
