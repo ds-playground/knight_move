@@ -1,10 +1,10 @@
-# Knight's Tour Sequence Analysis
+# Knight Move Sequence Analysis
 
 A comprehensive Python project for analyzing knight move patterns on a customizable grid with constraints and filtering capabilities.
 
 ## Project Overview
 
-This project implements a sophisticated knight move analysis system that generates and validates sequences on a 4x5 grid containing letters and numbers. The system uses pure Python data structures (tuples and lists) without external dependencies like pandas or numpy. It can apply various constraints including boundary checking, position avoidance, and visit limitations to specific coordinates.
+This project implements a knight move analysis system that generates and validates sequences on a 4x5 grid containing letters and numbers. The system uses pure Python data structures (tuples and lists) without external dependencies like pandas or numpy. It can apply various constraints including boundary checking, position avoidance, and visit limitations to specific coordinates.
 
 ## Features
 
